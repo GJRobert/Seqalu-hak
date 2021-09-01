@@ -173,7 +173,7 @@ table {
 }
 
 .HL {display: none;}
-td:nth-child(2) .SI:after {
+/*td:nth-child(1) .SI:after {
   content: "SI";
   font-size: 0.3em;
   vertical-align: top;
@@ -183,7 +183,19 @@ td:nth-child(2) .SI:after {
   margin-left: 1em;
   font-family: 'jf open 粉圓 1.1';
   border-radius: 0.5em;
+}*/
+
+/*.time:after {content: " - 四縣";}*/
+section:before {
+  content: "客：四縣腔";
+  float: right;
+  /*font-family: FangSong;*/
+  font-size: 0.5em;
 }
+/*#cover-page:after {
+  content: "（四縣腔）";
+  display: block;
+}*/
 
 </style> <link id="hakvar" rel="stylesheet" type="text/css" href="">
     <script>
@@ -209,11 +221,11 @@ td:nth-child(2) .SI:after {
       <div> 公視戲劇<br>
         <span style="font-size: 2em; font-family: '王漢宗中行書繁'">「斯卡羅」</span><br>
         <span style="font-size: 1.5em;">客語台詞彙整</span><br>
-        （學習用） </div>
+        （學習用）<span class="SI"><br>（四縣腔）</span><span class="HL"><br>（海陸腔）</span> </div>
     </div>
     <div style="float:right; line-height:1.3em;"> <a href="https://www.facebook.com/Aiuanyu/posts/345262983761551">Aiuanyu_愛灣語</a>編 <br>
-      v0.4beta<a href="https://drive.google.com/file/d/1vCk5SYo32PHfw_vmfHnGL7YgdTegbxFi/view">（☞ 看最新版）</a><br>
-      <a href="https://github.com/GJRobert/Seqalu-hak/commits/main">（更新紀錄）</a><br><button
+      v0.4beta-HLb1<a href="https://drive.google.com/file/d/1vCk5SYo32PHfw_vmfHnGL7YgdTegbxFi/view">（☞ 看最新版）</a><br>
+      <a href="https://github.com/GJRobert/Seqalu-hak/commits/main">（更新紀錄）</a><br class="noprint"><button
         id="hakbutton" class="noprint"
         onclick="toggleHakVar()">切換到海陸腔</button> <br>
       <a href="http://ghsrobert.tk/hist/seqalu#%E8%A7%80%E7%9C%8B">收看原劇</a><br>

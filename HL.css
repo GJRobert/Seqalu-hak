@@ -1,6 +1,6 @@
 .SI {display: none !important;}
 .HL {display: initial !important;}
-td:nth-child(2) .HL:after {
+/*td:nth-child(1) .HL:after {
   content: "HL";
   font-size: 0.3em;
   vertical-align: top;
@@ -10,6 +10,14 @@ td:nth-child(2) .HL:after {
   margin-left: 1em;
   font-family: 'jf open 粉圓 1.1';
   border-radius: 0.5em;
+}*/
+
+/*.time:after {content: " - 海陸";}*/
+
+section:before {
+  content: "客：海陸腔";
+  float: right;
+  font-size: 0.5em;
 }
 
 /* 以下尚無效，不受瀏覽器支援 */
