@@ -11,3 +11,12 @@ td:nth-child(2) .HL:after {
   font-family: 'jf open 粉圓 1.1';
   border-radius: 0.5em;
 }
+
+/* 以下尚無效，不受瀏覽器支援 */
+@page {
+  @right-top {content: "海陸"; color: black;}
+}
+
+@page :first {
+  @right-top {content: "";}
+}

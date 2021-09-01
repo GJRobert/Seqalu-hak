@@ -69,6 +69,14 @@ section table {
   break-before: always;
 }
   .noprint {display: none;}
+
+}
+
+@page {
+  @top-right { /* 幾乎都還沒有瀏覽器支援這個！ */
+    content: "四縣";
+    color: black;
+  }
 }
 
 #cover-page {
@@ -176,18 +184,22 @@ td:nth-child(2) .SI:after {
   font-family: 'jf open 粉圓 1.1';
   border-radius: 0.5em;
 }
+
 </style> <link id="hakvar" rel="stylesheet" type="text/css" href="">
     <script>
         function toggleHakVar() {
             // ☞ How to switch between multiple CSS stylesheets using JavaScript ? - GeeksforGeeks <https://www.geeksforgeeks.org/how-to-switch-between-multiple-css-stylesheets-using-javascript/>
             var hakvar = document.getElementsByTagName('link')[0];
+            var hakbutton = document.getElementById('hakbutton');
   
             // Change the value of href attribute 
             // to change the css sheet.
             if (hakvar.getAttribute('href') == '') {
                 hakvar.setAttribute('href', 'HL.css');
+                hakbutton.innerHTML = '切換回四縣腔'
             } else {
                 hakvar.setAttribute('href', '');
+                hakbutton.innerHTML = '切換到海陸腔'
             }
         }
     </script>
@@ -200,10 +212,10 @@ td:nth-child(2) .SI:after {
         （學習用） </div>
     </div>
     <div style="float:right; line-height:1.3em;"> <a href="https://www.facebook.com/Aiuanyu/posts/345262983761551">Aiuanyu_愛灣語</a>編 <br>
-      v0.4beta<a href="https://drive.google.com/file/d/1vCk5SYo32PHfw_vmfHnGL7YgdTegbxFi/view">（☞ 看最新版）</a><button
-        class="noprint"
-        onclick="toggleHakVar()">切換客話腔調</button><br>
-      <a href="https://github.com/GJRobert/Seqalu-hak/commits/main">（更新紀錄）</a> <br>
+      v0.4beta<a href="https://drive.google.com/file/d/1vCk5SYo32PHfw_vmfHnGL7YgdTegbxFi/view">（☞ 看最新版）</a><br>
+      <a href="https://github.com/GJRobert/Seqalu-hak/commits/main">（更新紀錄）</a><br><button
+        id="hakbutton" class="noprint"
+        onclick="toggleHakVar()">切換到海陸腔</button> <br>
       <a href="http://ghsrobert.tk/hist/seqalu#%E8%A7%80%E7%9C%8B">收看原劇</a><br>
       <a href="https://docs.google.com/document/d/1qjP0zwRnv96oyrgvqQfZm3rADH9A1hVpi91XZwlRJaU/edit?usp=sharing">討論、共筆、協作區</a></div>
     <div id="chars">【講客个人物】
