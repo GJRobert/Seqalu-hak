@@ -68,6 +68,7 @@ section table {
 #thanks {
   break-before: always;
 }
+  .noprint {display: none;}
 }
 
 #cover-page {
@@ -161,7 +162,35 @@ table {
 
 .draft section {
   background-color: hsl(160, 69%, 10%) /* #198964 的暗黑調 */
-}</style>
+}
+
+.HL {display: none;}
+td:nth-child(2) .SI:after {
+  content: "SI";
+  font-size: 0.3em;
+  vertical-align: top;
+  color: white;
+  background-color: navy;
+  padding: 0.3em;
+  margin-left: 1em;
+  font-family: 'jf open 粉圓 1.1';
+  border-radius: 0.5em;
+}
+</style> <link id="hakvar" rel="stylesheet" type="text/css" href="">
+    <script>
+        function toggleHakVar() {
+            // ☞ How to switch between multiple CSS stylesheets using JavaScript ? - GeeksforGeeks <https://www.geeksforgeeks.org/how-to-switch-between-multiple-css-stylesheets-using-javascript/>
+            var hakvar = document.getElementsByTagName('link')[0];
+  
+            // Change the value of href attribute 
+            // to change the css sheet.
+            if (hakvar.getAttribute('href') == '') {
+                hakvar.setAttribute('href', 'HL.css');
+            } else {
+                hakvar.setAttribute('href', '');
+            }
+        }
+    </script>
   </head>
   <body>
     <div id="cover-page">
@@ -171,7 +200,9 @@ table {
         （學習用） </div>
     </div>
     <div style="float:right; line-height:1.3em;"> <a href="https://www.facebook.com/Aiuanyu/posts/345262983761551">Aiuanyu_愛灣語</a>編 <br>
-      v0.4beta<a href="https://drive.google.com/file/d/1vCk5SYo32PHfw_vmfHnGL7YgdTegbxFi/view">（☞ 看最新版）</a><br>
+      v0.4beta<a href="https://drive.google.com/file/d/1vCk5SYo32PHfw_vmfHnGL7YgdTegbxFi/view">（☞ 看最新版）</a><button
+        class="noprint"
+        onclick="toggleHakVar()">切換客話腔調</button><br>
       <a href="https://github.com/GJRobert/Seqalu-hak/commits/main">（更新紀錄）</a> <br>
       <a href="http://ghsrobert.tk/hist/seqalu#%E8%A7%80%E7%9C%8B">收看原劇</a><br>
       <a href="https://docs.google.com/document/d/1qjP0zwRnv96oyrgvqQfZm3rADH9A1hVpi91XZwlRJaU/edit?usp=sharing">討論、共筆、協作區</a></div>
@@ -191,8 +222,9 @@ table {
       <table style="width: 100%" border="0">
         <tbody>
           <tr>
-            <td>Cúnngǐn:&nbsp; </td>
-            <td>Fánè Kied, lò gúigì, éndéu ìa Hàgngǐn zóng, íu ngǐn siiplìug se ě, oi íu sǐinngǐanlí! </td>
+            <td><span class="SI">Cúnngǐn</span><span class="HL">cunˋ ngin</span>:&nbsp; </td>
+            <td><span class="SI">Fánè Kied, lò gúigì, éndéu ìa Hàgngǐn zóng, íu ngǐn siiplìug se ě, oi íu sǐinngǐanlí!</span><span
+                class="HL">fanˋ er&nbsp; kiedˋ, loˊ guiˋ giˊ , en&nbsp; deuˋ liaˊ hag ngin zongˋ, rhiuˋ ngin shibˋ liug soiˇ leˋ , oiˇ rhiuˋ shin ngien liˋ!</span></td>
           </tr>
           <tr>
             <td>村人： </td>

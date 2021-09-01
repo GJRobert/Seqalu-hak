@@ -1,0 +1,13 @@
+.SI {display: none !important;}
+.HL {display: initial !important;}
+td:nth-child(2) .HL:after {
+  content: "HL";
+  font-size: 0.3em;
+  vertical-align: top;
+  color: white;
+  background-color: maroon;
+  padding: 0.3em;
+  margin-left: 1em;
+  font-family: 'jf open 粉圓 1.1';
+  border-radius: 0.5em;
+}
