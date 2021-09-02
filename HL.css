@@ -1,5 +1,8 @@
 .SI {display: none !important;}
-.HL {display: initial !important;}
+.HL {
+  display: initial !important;
+  text-shadow: 0.05em 0.05em maroon;
+}
 /*td:nth-child(1) .HL:after {
   content: "HL";
   font-size: 0.3em;
