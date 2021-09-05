@@ -1,7 +1,9 @@
 .SI {display: none !important;}
 .HL {
   display: initial !important;
-  text-shadow: 0.05em 0.05em maroon;
+}
+table .HL {
+  text-shadow: 0.1em 0.1em 0.1em maroon;
 }
 /*td:nth-child(1) .HL:after {
   content: "HL";
