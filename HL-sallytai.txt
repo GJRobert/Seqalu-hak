@@ -64,68 +64,68 @@
 : 
 <span class="HL">林</span>: <span class="HL">妹仔走忒, 係講倈仔又死忒, 厥姆死毋會放過𠊎. </span>
 
-<span class="HL">lim</span>: <span class="HL">teu baiˊ , hemˋ ngi hiˇ fuˊ shang , ngi giangˋ doˇ voi+ siˊ ! liaˊ ha+ rhiu+ voi+ hiˇ siongˋ chi ? </span>
+: 
 <span class="HL">林</span>: <span class="HL">頭擺, 喊你去府城, 你驚到會死! 這下又會去相㓾? </span>
 
-<span class="HL">Kiedˋ</span>: <span class="HL">a+ baˋ ! </span>
+: 
 <span class="HL">杰</span>: <span class="HL">阿爸! </span>
 
-<span class="HL">lim</span>: <span class="HL">goˋ moˋ ziiˊ ! m heˇ ngi , en ciu+ rhiuˋ tien leˋ laˇ! </span>
+: 
 <span class="HL">林</span>: <span class="HL">孤盲子! 毋係你, 𫣆就有田哩啦! </span>
 
-<span class="HL">Kiedˋ</span>: <span class="HL">a+ baˋ , rhiuˋ shon hoˊ ngiamˋ . </span>
+: 
 <span class="HL">杰</span>: <span class="HL">阿爸, 有船好拈. </span>
 
-<span class="HL">a+ giuˊ</span>: <span class="HL">mo hagˋ lonˊ ……</span>
+: 
 <span class="HL">阿九</span>: <span class="HL">無核卵……（粗口, 很小聲, 我聽不出來, 是參考</span>
 <span class="HL">網友資訊）</span>
 
-<span class="HL">a+ giuˊ</span>: <span class="HL">zhunˇ biˋhan sed ted leˋ! </span>
+: 
 <span class="HL">阿九</span>: <span class="HL">圳埤還塞忒哩! </span>
 
-<span class="HL">lim</span>: <span class="HL">ciu+ mong+ ngi a+ ze , duˇ  fuˊ shang ngid er hoˊ goˇ . </span>
+: 
 <span class="HL">林</span>: <span class="HL">就望你阿姊, 在府城日仔好過. </span>
 
-<span class="HL">Kiedˋ</span>: <span class="HL">heˇ a+ meˋ gai  zoˇ sangˋ fanˋ gaiˇ chi gaiˇ ? </span>
+: 
 <span class="HL">杰</span>: <span class="HL">係阿姆該做生番个㓾个? </span>
 
 
 
 
-<span class="HL">lim</span>: <span class="HL">ngi shibˋ liug soiˇ leˋ, duˇ long kiau, m heˇ bunˋ ngin chi siˊ , ciu+ heˇ zoˇ sangˋ fanˋ er chi ngin . </span>
+: 
 <span class="HL">林</span>: <span class="HL">你十六歲哩, 在琅𤩝, 毋係分人㓾死, 就係做生番仔㓾人. </span>
 
-<span class="HL">lim</span>: <span class="HL">rhiuˋ lauˋ ngi a+ ze gongˊ goˇ leˋ, ngi shibˋ liug soiˇ , voi+ daiˇ ngi hiˇ fuˊ shang . gi m zhonˊ loi , en hiˇ cim gi ! </span>
+:
 <span class="HL">林</span>: <span class="HL">有摎你阿姊講過哩, 你十六歲, 會帶你去府城. 佢毋</span>
 <span class="HL">轉來, 𫣆去尋佢! </span>
 
-<span class="HL">giuˊ</span>: <span class="HL">ngi dongˊ shuiˊ mag , bunˋ shuiˊ ciang+ liu zinˇ ngia tien , nga tien m siiˊ saiˋ shuiˊ oi? ngi oiˇ hiug ciau shang , ngai oiˇ hiug boˊ lidˋ 、tungˊ liangˋ buˋ ! </span>
+: 
 <span class="HL">九</span>: <span class="HL">你擋水脈, 分水淨流進若田, 吾田毋使㘔水喔? </span>
 <span class="HL">你愛畜樵城, 𠊎愛畜保力、統領埔! </span>
 
-<span class="HL">shuiˊ</span>: <span class="HL">a+ giuˊ goˋ er , ngi lauˋ sangˋ fanˋ piogˋ gaiˇ tungˊ liangˋ buˋ , voi+ mo oiˇ leˋ. </span>
+: 
 <span class="HL">水</span>: <span class="HL">阿九哥仔, 你摎生番贌个統領埔, 會無愛哩. </span>
 
-<span class="HL">shuiˊ</span>: <span class="HL">a+ giuˊ goˋ er a+ , tai+ gaˋ ngiong+  rhid pu+ la+, hoˊ mo ? </span>
+: 
 <span class="HL">水</span>: <span class="HL">阿九哥仔啊, 大家讓一步啦, 好無? </span>
 
-<span class="HL">giuˊ</span>: <span class="HL">boˊ lidˋ zoˇ ded hiug anˊ doˋ ngin , ngai han oiˇ lauˋ sangˋ fanˋ piogˋ tungˊ liangˋ buˋ ? </span>
+: 
 <span class="HL">九</span>: <span class="HL">保力做得畜恁多人, 𠊎還愛摎生番贌統領埔? </span>
 
-<span class="HL">giuˊ</span>: <span class="HL">zhauˋ shin , giˊ haˋ gaiˇ seˇ ngin er , konˇ cid gaˋ gaiˇ a+ baˋ , gongˋ hiˇ mai . ciongˊ m doˊ shuiˊ , gi liaˊ deuˋ a+ baˋ , pagˋ pagˋ siˊ leˋ! </span>
+: 
 <span class="HL">九</span>: <span class="HL">朝晨, 幾下个細人仔, 看自家个阿爸, 扛去埋. </span>
 <span class="HL">搶毋著水, 佢這兜阿爸, 白白死哩! </span>
 
-<span class="HL">hag gaˋ ngin m giangˋ zoˇ ngi+ min rha , tungˊ liangˋ buˋ , m tuiˇ ! shuiˊ mag , ngi m hauˇ biongˇ a+ , denˊ nga ngin hiˇ ciongˊ ! </span>
+
 <span class="HL">客家人毋驚做義⺠爺, 統領埔, 毋退! 水脈, 你毋好放啊, 等吾人去搶! </span>
 
-<span class="HL">shuiˊ</span>: <span class="HL">a+ giuˊ goˋ , m hauˇ zeuˊ la+! </span>
+: 
 <span class="HL">水</span>: <span class="HL">阿九哥, 毋好走啦! </span>
 
-<span class="HL">giuˊ</span>: <span class="HL">liaˊ ha+ , ngi zoˇ ded biongˇ shuiˊ mag . </span>
+: 
 <span class="HL">九</span>: <span class="HL">這下, 你做得放水脈. </span>
 
-<span class="HL">giuˊ</span>: <span class="HL">a+ shuiˊ , tungˊ liangˋ buˋ gaiˇ foˊ , voi+ shauˋ doˇ sha+ liau oˊ ! </span>
+: 
 <span class="HL">九</span>: <span class="HL">阿水, 統領埔个火, 會燒到社寮哦! </span>
 
 <span class="HL">lim</span>: <span class="HL">teu baiˊ hag ngin shauˋ , liaˊ baiˊ ciau shang hogˋ loˊ er shauˋ . liaˊ vug , heˇ ngi a+ meˋ cinˋ shiuˊ hiˊ gaiˇ . </span>
