@@ -197,7 +197,7 @@ section:before {
   display: block;
 }*/
 
-.rowNum {display: none;}
+/*.rowNum {display: none;}*/
 
 </style> <link id="hakvar" rel="stylesheet" type="text/css" href="">
     <script>
@@ -222,16 +222,13 @@ section:before {
         var nodes = document.getElementsByTagName("tr");
         for (var i=0; i<nodes.length; i+=2) { // 奇數行
           var name = nodes[i].getElementsByTagName("td")[0].innerHTML;
-          name = "<span class='rowNum' style='display:none;'>" + i + "</span> " + name;
+          var j = i / 2 + 1;
+          name = "<span class='rowNum'>" + j + "</span> " + name;
           nodes[i].getElementsByTagName("td")[0].innerHTML = name;
         }
       }
 
-      function toggleRowNum() {
-          var rowNum = document.querySelectorAll("rowNum")[0];
-          rowNum.style.display = rowNum.style.display == 'none'?'initial':'none';
-          return false
-        }
+
     </script>
   </head>
   <body onload="injectRowNum()">
@@ -247,7 +244,7 @@ section:before {
         id="hakbutton" class="noprint"
         onclick="toggleHakVar()">切換到海陸腔</button> <button
         id="RowNumButton" class="noprint"
-        onclick="toggleRowNum()">標上行號</button><br>
+        onclick="injectRowNum()">標上行號</button><br>
       <a href="http://ghsrobert.tk/hist/seqalu#%E8%A7%80%E7%9C%8B">收看原劇</a><br>
       <a href="https://docs.google.com/document/d/1qjP0zwRnv96oyrgvqQfZm3rADH9A1hVpi91XZwlRJaU/edit?usp=sharing">討論、共筆、協作區</a></div>
     <div id="chars">【講客个人物】
