@@ -228,13 +228,16 @@ section:before {
         time.innerHTML = data[0].time;
         var table = document.createElement("table");
         for (var i=0; i<data.length; i++) {
-          var tr1 = document.createElement("tr");
-          var tr2 = document.createElement("tr");
-          var c = data[i].section.c
-          tr1.innerHTML = '<td><span class="SI">' + nameSi[c] + '</span><span class="HL">' + nameHl[c] + '</span>:&nbsp;</td><td><span class="SI">' + data[i].section.s + '</span><span class="HL">' + data[i].section.hl + '</span></td>';
-          tr2.innerHTML = '<td>' + data[i].section.c + '：</td><td>' + data[i].section.h + '</td>';
-          table.appendChild(tr1);
-          table.appendChild(tr2);
+          for (var j=0; j<data[i].section.length; j++) {
+            var tr1 = document.createElement("tr");
+            var tr2 = document.createElement("tr");
+            var c = data[i].section[j].c
+            tr1.innerHTML = '<td><span class="SI">' + nameSi[c] + '</span><span class="HL">' + nameHl[c] + '</span>:&nbsp;</td><td><span class="SI">' + data[i].section[j].s + '</span><span class="HL">' + data[i].section[j].hl + '</span></td>';
+            tr2.innerHTML = '<td>' + data[i].section[j].c + '：</td><td>' + data[i].section[j].h + '</td>';
+            table.appendChild(tr1);
+            table.appendChild(tr2);
+          }
+          
         }
         sec.appendChild(time);
         sec.appendChild(table);
@@ -248,23 +251,31 @@ section:before {
       [
         {
           "time": "0:00",
-          "section": {
+          "section": [{
             "c": "杰",
             "s": "fánè",
             "h": "番<br>仔",
             "hl": "fanˋ er"
-          }
+          },
+          {
+            "c": "蝶",
+            "s": "fánè",
+            "h": "番<br>仔",
+            "hl": "fanˋ er"
+          }]
         }
       ]
     </script>
     <script type="application/json" id="name-si">
       {
-        "杰": "Kied"
+        "杰": "Kied",
+        "蝶": "Tiab"
       }
     </script>    
     <script type="application/json" id="name-hl">
       {
-        "杰": "Kiedˋ"
+        "杰": "Kiedˋ",
+        "蝶": "Tiabˋ"
       }
     </script>
   </head>
