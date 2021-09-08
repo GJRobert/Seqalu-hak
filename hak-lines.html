@@ -218,21 +218,29 @@ section:before {
     <script type="text/javascript">
       function create() {
         var data = JSON.parse(document.getElementById('data').innerHTML);
+        var nameSi = JSON.parse(document.getElementById('name-si').innerHTML);
 
         // Convert JSON Data Dynamically to HTML Table using JavaScript <https://www.encodedna.com/javascript/populate-json-data-to-html-table-using-javascript.htm>
+        var sec = document.createElement("section");
+        var time = document.createElement("span");
+        time.classList.add("time");
+        time.innerHTML = data[0].time;
         var table = document.createElement("table");
         for (var i=0; i<data.length; i++) {
-          var tr = document.createElement("tr");
-          tr.innerHTML = '<td>' + data[i].section.c + ':&nbsp;</td><td>' + data[i].section.s + '</td>';
-          table.appendChild(tr);
+          var tr1 = document.createElement("tr");
+          var tr2 = document.createElement("tr");
+          var c = data[i].section.c
+          tr1.innerHTML = '<td>' + nameSi[c] + ':&nbsp;</td><td>' + data[i].section.s + '</td>';
+          tr2.innerHTML = '<td>' + data[i].section.c + '：</td><td>' + data[i].section.h + '</td>';
+          table.appendChild(tr1);
+          table.appendChild(tr2);
         }
-        // var tr = document.createElement("tr");
-        // tr.innerHTML = '<td>' + data[0].time + '</td>';
-        // table.appendChild(tr);
+        sec.appendChild(time);
+        sec.appendChild(table);
 
         var contentContainer = document.getElementById("content");
         contentContainer.innerHTML = "";
-        contentContainer.appendChild(table);
+        contentContainer.appendChild(sec);
         }
     </script>
     <script type="application/json" id="data">
@@ -240,13 +248,18 @@ section:before {
         {
           "time": "0:00",
           "section": {
-            "c": "Kied",
+            "c": "杰",
             "s": "fánè",
-            "h": "番仔",
+            "h": "番<br>仔",
             "hl": "fanˋ er"
           }
         }
       ]
+    </script>
+    <script type="application/json" id="name-si">
+      {
+        "杰": "Kied"
+      }
     </script>
   </head>
   <body onload="create()">
