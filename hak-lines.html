@@ -219,6 +219,7 @@ section:before {
       function create() {
         var data = JSON.parse(document.getElementById('data').innerHTML);
         var nameSi = JSON.parse(document.getElementById('name-si').innerHTML);
+        var nameHl = JSON.parse(document.getElementById('name-hl').innerHTML);
 
         // Convert JSON Data Dynamically to HTML Table using JavaScript <https://www.encodedna.com/javascript/populate-json-data-to-html-table-using-javascript.htm>
         var sec = document.createElement("section");
@@ -230,7 +231,7 @@ section:before {
           var tr1 = document.createElement("tr");
           var tr2 = document.createElement("tr");
           var c = data[i].section.c
-          tr1.innerHTML = '<td>' + nameSi[c] + ':&nbsp;</td><td>' + data[i].section.s + '</td>';
+          tr1.innerHTML = '<td><span class="SI">' + nameSi[c] + '</span><span class="HL">' + nameHl[c] + '</span>:&nbsp;</td><td><span class="SI">' + data[i].section.s + '</span><span class="HL">' + data[i].section.hl + '</span></td>';
           tr2.innerHTML = '<td>' + data[i].section.c + '：</td><td>' + data[i].section.h + '</td>';
           table.appendChild(tr1);
           table.appendChild(tr2);
@@ -259,6 +260,11 @@ section:before {
     <script type="application/json" id="name-si">
       {
         "杰": "Kied"
+      }
+    </script>    
+    <script type="application/json" id="name-hl">
+      {
+        "杰": "Kiedˋ"
       }
     </script>
   </head>
