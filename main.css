@@ -286,11 +286,11 @@ tr:nth-child(2n+1).lang2, tr:nth-child(2n+1) .lang2 {font-family: Cambria, serif
 /* 英法文 */
 .fr td, .lang6 td {color: hsl(255, 78%, 91%); font-family: 'Bell MT';}
 .lang4 td {color: hsl(187, 78%, 91%); font-family: 'Bell MT';}
-tr:nth-child(2n).lang4, tr:nth-child(2n).lang6 {display: none;}
+tr:nth-child(2n).lang4, tr:nth-child(2n).lang6, tr:nth-child(2n).lang5 {display: none;}
 /* Mandarin */
 tr.lang5, td.lang5, .lang5 {color: /*honeydew*//*hsl(217, 82%, 89%)*/hsl(235, 78%, 91%);}
-tr:nth-child(2n).lang5, tr:nth-child(2n) .lang5 {font-family: "源泉圓體", sans-serif; font-weight: 700;}
-tr:nth-child(2n+1).lang5, tr:nth-child(2n+1) .lang5 {font-family: Dubai, sans-serif; font-weight: 500;}
+tr:nth-child(2n).lang5, tr:nth-child(2n) .lang5 {font-family: "ㄅ源泉注音圓體", sans-serif; font-weight: 700;}
+tr:nth-child(2n+1).lang5, tr:nth-child(2n+1) .lang5 {font-family: ㄅ源泉注音圓體, sans-serif; font-weight: 500;}
 
 .poem {
   font-style: italic;

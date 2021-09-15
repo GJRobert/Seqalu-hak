@@ -16,6 +16,6 @@ names ={
   "Tok": ["Tok","Tok"],
   "必": ["Pickering", "Pickering"],
   "李": ["LeGendre", "LeGendre"],
-  "軍官5": ["Jūnguān"],
-  "劉5": ["Líu"]
+  "軍官5": ["軍官"],
+  "劉5": ["劉"]
 }
