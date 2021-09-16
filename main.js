@@ -130,8 +130,22 @@ function create() {
 
 }
 
+function dump() {
+  var datadump = document.getElementById('datadump');
+  var staticData = document.querySelectorAll('.time, tr:nth-child(2n+1) td:nth-child(2), tr:nth-child(2n) td, h1');
+  staticData.forEach(function(item, i) { // JS - for 迴圈與 forEach 有什麼不同 | 卡斯伯 Blog - 前端，沒有極限 <https://wcc723.github.io/development/2020/10/05/js-for-loop-vs-for-each/>
+    var row = document.createElement("xmp"); // How to display raw html code in PRE or something like it but without escaping it - Stack Overflow <https://stackoverflow.com/questions/16783708/how-to-display-raw-html-code-in-pre-or-something-like-it-but-without-escaping-it>
+    //while (/\n +/.test(item.innerHTML)) {
+    //  item.innerHTML.replace(/\n +/,'');
+    //}
+    row.innerHTML = item.tagName + ': "' + item.innerHTML.replaceAll(/\n +/g,'').replace(/^ +/,'').replace(/ +$/,'').replace(/：$/,'').replace(/<br>$/,'') + '",';
+    datadump.appendChild(row);
+  });
+}
+
 // html - Loading javascript in body onload with 2 functions - Stack Overflow <https://stackoverflow.com/questions/10122555/loading-javascript-in-body-onload-with-2-functions>
 function init() {
   create();
   fillHakNames();
+  dump();
 }
