@@ -138,9 +138,71 @@ function dump() {
     //while (/\n +/.test(item.innerHTML)) {
     //  item.innerHTML.replace(/\n +/,'');
     //}
-    row.innerHTML = item.tagName + ': "' + item.innerHTML.replaceAll(/\n +/g,'').replace(/^ +/,'').replace(/ +$/,'').replace(/：$/,'').replace(/<br>$/,'') + '",';
+    var t = item.innerHTML;
+    //if (item.tagName === 'h1') { // 這個都無效 :( 還好目前也只有 h1 裡有 <p>...</p>，所以就用後面的 method 來全部取代
+    //  t.replace('EP','');
+    //}
+    row.innerHTML = '"' + t.replaceAll(/\n +/g,'').replace(/^ +/,'').replace(/ +$/,'').replace(/：$/,'').replace(/<br>$/,'').replace(/<p> */,'').replace(/<\/p>/,'').replace(/&nbsp;/g,'') + '",';
+    row.classList = item.tagName;
     datadump.appendChild(row);
   });
+
+  var h1 = document.querySelectorAll('xmp.H1');
+  h1.forEach(function(item, i) {
+    var epn = item.innerHTML.substring(3,4); // String substring() 字串切割 / 字串擷取 - JavaScript (JS) 教學 Tutorial <https://www.fooish.com/javascript/string/substring.html>
+    var title = item.innerHTML.substring(5,1000);
+    var ep = document.createElement('p');
+    ep.innerHTML = '  {<br>    "EP": "' + epn + '",<br>    "title": "' + title + '<br>    "sections": [';
+    item.innerHTML = '';
+    item.appendChild(ep);
+  });
+
+  var time = document.querySelectorAll('xmp.DIV, xmp.SPAN');
+  time.forEach(function(item, i) {
+    var secHead = document.createElement('p');
+    secHead.innerHTML = '      {<br>        "t": ' + item.innerHTML + '<br>        "rows": [';
+    item.innerHTML = '';
+    item.appendChild(secHead);
+  });
+
+  var rowElements = document.querySelectorAll('xmp.TD');
+  for (var i=0; i<=rowElements.length; i+=3) { // 每 3 行一組
+    var j = i + 1;
+    var k = i + 2;
+
+    if (rowElements[j] == undefined) {
+      continue;
+    }
+
+    var r1Head = document.createElement('pre');
+    var r1 = rowElements[j].innerHTML;
+    var r2 = rowElements[k].innerHTML;
+    var r3 = rowElements[i].innerHTML;
+    var r3Foot = document.createElement('pre');
+    
+    datadump.insertBefore(r1Head, rowElements[i]); // Node.insertBefore() - Web APIs | MDN <https://developer.mozilla.org/zh-TW/docs/Web/API/Node/insertBefore>
+    r1Head.innerHTML = '          [<br>'
+    rowElements[i].innerHTML = '            ' + r1;
+    rowElements[j].innerHTML = '            ' + r2;
+    rowElements[k].innerHTML = '            ' + r3;
+    rowElements[k].after(r3Foot); // Element.after() - Web APIs | MDN <https://developer.mozilla.org/en-US/docs/Web/API/Element/after>
+    r3Foot.innerHTML = '          ],';
+  }
+  
+  var newSecHead = document.querySelectorAll('pre+xmp.SPAN');
+  newSecHead.forEach(function(item,i) {
+    var secEnd = document.createElement('pre');
+    datadump.insertBefore(secEnd, item);
+    secEnd.innerHTML = '        ]<br>      },';
+  });
+
+  var newEpHead = document.querySelectorAll('pre+xmp.H1');
+  newEpHead.forEach(function(item,i) {
+    var epEnd = document.createElement('pre');
+    datadump.insertBefore(epEnd, item);
+    epEnd.innerHTML = '        ]<br>      }<br>    ]<br>  },';
+  });
+
 }
 
 // html - Loading javascript in body onload with 2 functions - Stack Overflow <https://stackoverflow.com/questions/10122555/loading-javascript-in-body-onload-with-2-functions>
