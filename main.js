@@ -81,7 +81,7 @@ function create() {
     for (var j=0; j<data[i].sections.length; j++) {
 
       var section = document.createElement("section");
-      section.classList.add("noHak");
+      // section.classList.add("noHak");
 
       var time = document.createElement("span");
       time.classList.add("time");
@@ -114,12 +114,30 @@ function create() {
         table.appendChild(tr2);
       }
 
+      var secLangs = ''; // 來標示 section 所含語文
       for (var k=0; k<data[i].sections[j].rows.length; k++) {
-        if (data[i].sections[j].rows[k][3] == undefined) {
-          section.classList.remove("noHak");
-          break;
+        switch (data[i].sections[j].rows[k][3]) {
+          case undefined:
+            secLangs += ' 客';
+            break;
+          case '2':
+            secLangs += ' Ho̍h';
+            break;
+          case '3':
+            secLangs += ' Pyn';
+            break;
+          case '4':
+            secLangs += ' en';
+            break;
+          case '5':
+            secLangs += ' 官';
+            break;
+          case '6':
+            secLangs += ' fr'
+            break;
         }
       }
+      section.setAttribute('data-before', secLangs);
 
       section.appendChild(table);
       ep.appendChild(section);
