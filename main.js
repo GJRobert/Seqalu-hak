@@ -167,8 +167,45 @@ function create() {
 
 }
 
+function listMissingHL() {
+  var hlMissingContainer = document.getElementById('HL-missing');
+
+  /*var hlMissing = document.getElementById('EP7').querySelectorAll("tr:not(.lang2):not(.lang3):not(.lang4):not(.lang5):not(.lang6) td");*/
+  var hlMissing = '';
+  
+  for (var i = 7; i < 13; i++) {
+    var ep = 'EP'+i;
+    hlMissing += document.getElementById(ep).querySelectorAll("tr:not(.lang2):not(.lang3):not(.lang4):not(.lang5):not(.lang6)");
+  }
+  var t = ''
+  for (var i = 0; i < hlMissing.length; i++) {
+    t += hlMissing[i].innerHTML + '<br>';
+  }
+  hlMissingContainer.innerHTML = t;
+
+  /* var hlMissingTable = document.createElement('table');
+  for (var i = 0; i < hlMissing.length; i+=4) {
+    var row = document.createElement('tr');
+    var name = document.createElement('td');
+    var han = document.createElement('td');
+    var missing = document.createElement('td');
+    var j = i+2;
+    var k = i+3
+    name.innerHTML = hlMissing[j].innerHTML;
+    han.innerHTML = hlMissing[k].innerHTML;
+    missing.innerHTML = '';
+    row.appendChild(name);
+    row.appendChild(Han);
+    row.appendChild(missing);
+    hlMissingTable.appendChild(row);
+  }
+
+  hlMissingContainer.appendChild(hlMissingTable); */
+}
+
 // html - Loading javascript in body onload with 2 functions - Stack Overflow <https://stackoverflow.com/questions/10122555/loading-javascript-in-body-onload-with-2-functions>
 function init() {
   create();
   fillRomanNames();
+  // listMissingHL();
 }
