@@ -230,7 +230,7 @@ section table {
 
 
 #main-title:after {
-  content: 'Aiuanyu 編／v2.01 20211103';
+  content: 'Aiuanyu 編／v2.1 20211104';
   font-size: 0.5em;
   font-family: 蘋果儷中黑;
   position: absolute;
@@ -498,9 +498,9 @@ section tr:nth-child(2n+1).lang3 .lang2 {font-size: 1em !important;}
 /* 排灣文 */
 section tr.lang3, section td.lang3, section tr:nth-child(2n+1) .lang3, .sample.lang3 {color: /*honeydew*//*hsl(217, 82%, 89%)*/hsl(127, 100%, 96%);}
 section tr:nth-child(2n).lang3, section tr:nth-child(2n) .lang3, .sample.lang3 {font-family: "黑體-繁", sans-serif; font-weight: 700;}
-section tr:nth-child(2n+1).lang3, section tr:nth-child(2n+1) .lang3, .sample.lang3 {font-family: Superclarendon, 'Academy Engraved LET', 'Book Antigua', Baskerville, serif; font-weight: 500;}
-section tr:nth-child(2n+1).lang3 {font-size: 1.1em;}
-section tr:nth-child(2n+1) .lang3 {font-size: 0.8em;}
+section tr:nth-child(2n+1).lang3, section tr:nth-child(2n+1) .lang3, .sample.lang3 {font-family: Tantular, Superclarendon, 'Academy Engraved LET', 'Book Antigua', Baskerville, serif; font-weight: 500;} /* 「排灣經典」給系列圖文用的是 Kitsch 商用字型，我只能找其他免費字型 */
+section tr:nth-child(2n+1).lang3 {font-size: 1.4em;}
+section tr:nth-child(2n+1) .lang3 {font-size: 1em;}
 section tr.lang3 td:nth-child(2), section tr.lang6 td:nth-child(2) {padding-right: 25%;}
 section .lang3 td {line-height: 1.6em;}
 /* 英法文 */
@@ -643,8 +643,8 @@ td.classic, span.classic {
 
   /*text-shadow: 0.1em 0.1em 0.1em hsla(49, 79%, 51%, 0.8);*/
   text-decoration: underline;
-  text-decoration-color: hsla(49, 79%, 51%, 0.8);
-  text-decoration-style: double;
+  text-decoration-color: hsla(49, 79%, 51%, 0.5);
+  /*text-decoration-style: double;*/
 }
 td.classic:before {
   content: '🏅';
